@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran Rental Mobil</title>
+</head>
+<body>
+    <h2>Formulir Pendaftaran Rental Mobil</h2>
+    <form action="proses_pendaftaran.php" method="POST">
+        <label for="nama">Nama Lengkap:</label><br>
+        <input type="text" id="nama" name="nama" required><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="telepon">Nomor Telepon:</label><br>
+        <input type="tel" id="telepon" name="telepon" pattern="[0-9]{10,}" required><br><br>
+        
+        <label for="alamat">Alamat:</label><br>
+        <textarea id="alamat" name="alamat" rows="4" cols="30" required></textarea><br><br>
+        
+        <label for="jenis_mobil">Jenis Mobil yang Dirental:</label><br>
+        <select id="jenis_mobil" name="jenis_mobil" required>
+            <option value="Sedan">Sedan</option>
+            <option value="SUV">SUV</option>
+            <option value="Minibus">Minibus</option>
+            <option value="Truk">Truk</option>
+            <option value="Hatchback">Hatchback</option>
+        </select><br><br>
+        
+        <label for="tanggal_rental">Tanggal Rental:</label><br>
+        <input type="date" id="tanggal_rental" name="tanggal_rental" required><br><br>
+        
+        <label for="durasi_rental">Durasi Rental (hari):</label><br>
+        <input type="number" id="durasi_rental" name="durasi_rental" min="1" required><br><br>
+        
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

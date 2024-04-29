@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Mobil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Rental Mobil</h1>
+    </header>
+    <main>
+        <section id="car-info">
+            <h2>Informasi Mobil</h2>
+            <label for="jenis_mobil">Jenis Mobil yang Dirental:</label><br>
+            <select id="jenis_mobil" name="jenis_mobil" required onchange="showCarInfo()">
+                <option value="Sedan">Sedan</option>
+                <option value="SUV">SUV</option>
+                <option value="Minibus">Minibus</option>
+                <option value="Truk">Truk</option>
+                <option value="Hatchback">Hatchback</option> <!-- Mobil jenis Hatchback ditambahkan -->
+            </select><br><br>
+            <div id="car-features"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Rental Mobil</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
